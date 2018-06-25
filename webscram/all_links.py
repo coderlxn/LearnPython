@@ -53,3 +53,5 @@ def follow_external_only(starting_site):
 
 
 follow_external_only("http://www.baidu.com")
+
+
