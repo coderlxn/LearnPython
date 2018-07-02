@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ddadba85-dc2e-4f60-b98e-749bf527e9be" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/scrapydemo/tutorial/tutorial/spiders/dmoz_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapydemo/tutorial/tutorial/spiders/dmoz_spider.py" afterDir="false" />
-    </list>
+    <list default="true" id="ddadba85-dc2e-4f60-b98e-749bf527e9be" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,8 +26,8 @@
       <file leaf-file-name="dmoz_spider.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scrapydemo/tutorial/tutorial/spiders/dmoz_spider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="1" column="55" selection-start-line="1" selection-start-column="55" selection-end-line="1" selection-end-column="55" />
+            <state relative-caret-position="294">
+              <caret line="14" column="34" lean-forward="true" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -282,7 +280,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="459" y="69" width="1488" height="1047" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49853373" visible="true" weight="0.1875862" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32551318" />
@@ -678,8 +675,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scrapydemo/tutorial/tutorial/spiders/dmoz_spider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="55" selection-start-line="1" selection-start-column="55" selection-end-line="1" selection-end-column="55" />
+        <state relative-caret-position="294">
+          <caret line="14" column="34" lean-forward="true" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
