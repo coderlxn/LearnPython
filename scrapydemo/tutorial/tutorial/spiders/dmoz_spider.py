@@ -1,5 +1,5 @@
 import scrapy
-from tutorial.items import DomzItem
+from scrapydemo.tutorial.tutorial.items import DmozItem
 
 class DmozSpider(scrapy.Spider):
     name = "dmoz"
