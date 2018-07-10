@@ -1,5 +1,5 @@
-FROM python:3.6
-ADD . /app
-WORKDIR /app
-RUN pip install flask
+FROM python:3.6-alpine
+ADD . /code
+WORKDIR /code
+RUN pip3 install redis flask
 CMD ["python", "main.py"]
