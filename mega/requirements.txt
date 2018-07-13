@@ -1,4 +1,5 @@
-sqlalchemy
-sqlalchemy-migrate
 Flask
 Redis
+sqlalchemy
+sqlalchemy-migrate
+flask-sqlalchemy
