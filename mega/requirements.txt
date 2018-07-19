@@ -3,3 +3,5 @@ Redis
 sqlalchemy
 sqlalchemy-migrate
 flask-sqlalchemy
+flask-openid
+flask-login
