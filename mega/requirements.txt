@@ -1,5 +1,6 @@
 Flask
 Redis
+werkzeug
 sqlalchemy
 sqlalchemy-migrate
 flask-sqlalchemy

@@ -10,8 +10,7 @@ app.config.from_object("config")
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
-lm = LoginManager()
-lm.init_app(app)
+lm = LoginManager(app)
 lm.login_view = "login"
 oid = OpenID(app, os.path.join(basedir, "tmp"))
 
