@@ -4,6 +4,7 @@ from redis import Redis
 app = Flask(__name__)
 redis = Redis(host='redis', port=6379)
 
+
 @app.route('/')
 def hello():
     count = redis.incr('hits')
@@ -12,7 +13,7 @@ def hello():
 
 @app.route("/helloworld")
 def helloworld():
-	return "Greet from here"
+    return "Greet from here"
 
 
 if __name__ == "__main__":

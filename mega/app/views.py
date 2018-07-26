@@ -12,8 +12,8 @@ def load_user(id):
 
 @app.route("/")
 @app.route("/index")
+@login_required
 def index():
-    return "Hello Flask!"
     user = g.user
     posts = [
         {
