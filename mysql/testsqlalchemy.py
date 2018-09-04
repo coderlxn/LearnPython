@@ -8,7 +8,7 @@ from sqlalchemy import Column, String, Integer, Text
 from sqlalchemy.orm import sessionmaker, relationship
 
 
-engine = create_engine('mysql+mysqldb://lxn:Blue1989pawn821_@localhost:3306/blog?charset=utf8')
+engine = create_engine('mysql+mysqldb://root:mima@140.143.18.162:3306/blog?charset=UTF8MB4')
 Base = declarative_base()
 
 
