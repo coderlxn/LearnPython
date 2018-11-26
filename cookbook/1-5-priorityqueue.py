@@ -1,0 +1,45 @@
+# -*- coding: utf-8 -*-
+# @Time    : 10/9/18 6:20 PM
+# @Author  : Jax.Li
+# @FileName: 1-5-priorityqueue.py
+# @Software: PyCharm
+# @Blog    ：https://blog.jaxli.com
+
+# 下面的类利用 heapq 模块实现了一个简单的优先级队列：
+
+import heapq
+
+
+class PriorityQueue:
+    def __init__(self):
+        self._queue = []
+        self._index = 0
+
+    def push(self, item, priority):
+        heapq.heappush(self._queue, (-priority, self._index, item))
+        self._index += 1
+
+    def pop(self):
+        return heapq.heappop(self._queue)[-1]
+
+
+class Item:
+    def __init__(self, name):
+        self.name = name
+
+    def __repr__(self):
+        return "Item({!r})".format(self.name)
+
+
+q = PriorityQueue()
+q.push(Item("foo"), 1)
+q.push(Item("bar"), 5)
+q.push(Item("spam"), 4)
+q.push(Item("grok"), 1)
+q.push(Item("lam"), 3)
+
+print(q.pop())
+print(q.pop())
+print(q.pop())
+print(q.pop())
+print(q.pop())

@@ -7,7 +7,7 @@ from PyQt5.QtCore import Qt
 class Example(QMainWindow):
 
     def __init__(self):
-        super().__init__()
+        QMainWindow.__init__()
         self.init_ui()
 
     def init_ui(self):
