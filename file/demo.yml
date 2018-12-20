@@ -1,0 +1,17 @@
+ojbect:
+  - type: entity
+    name: human
+    dependent:
+      - temperature: [-30, 40]
+      - air
+    cost:
+      - water: 10
+      - food: 20
+      - air: 5
+  - type: scence
+    name: village
+    condition:
+      - air
+      - temperature: 20
+    resource:
+      - water: 
