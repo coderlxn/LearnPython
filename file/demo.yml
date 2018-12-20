@@ -14,4 +14,7 @@ ojbect:
       - air
       - temperature: 20
     resource:
-      - water: 
+      - water: -1
+      - food: 580
+      - wood: 800
+      - iron: 340
