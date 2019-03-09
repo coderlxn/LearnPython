@@ -1,6 +1,6 @@
 ojbect:
   - type: entity
-    name: human
+    name: sprite
     dependent:
       - temperature: [-30, 40]
       - air
