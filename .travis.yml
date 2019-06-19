@@ -1,3 +1,7 @@
 language: python
+install:
+  - sh ./test/travis_config/travis_setup.sh
 script:
-    - pytest
+  - sh ./test/travis_config/travis_run.sh
+after_success:
+    coveralls
