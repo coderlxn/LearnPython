@@ -1,0 +1,1 @@
+[![Coverage Status](https://coveralls.io/repos/github/coderlxn/LearnPython/badge.svg?branch=master)](https://coveralls.io/github/coderlxn/LearnPython?branch=master)
