@@ -1,1 +1,2 @@
 [![Coverage Status](https://coveralls.io/repos/github/coderlxn/LearnPython/badge.svg?branch=master)](https://coveralls.io/github/coderlxn/LearnPython?branch=master)
+![Travis (.org)](https://img.shields.io/travis/coderlxn/LearnPython.svg)
