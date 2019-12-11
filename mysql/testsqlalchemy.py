@@ -1,6 +1,6 @@
 import random
 from faker import Factory
-
+import uuid
 from sqlalchemy import create_engine, Table
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import ForeignKey
@@ -8,7 +8,7 @@ from sqlalchemy import Column, String, Integer, Text
 from sqlalchemy.orm import sessionmaker, relationship
 
 
-engine = create_engine('mysql+mysqldb://joywok:joywok2048@140.143.18.162:3306/websites?charset=UTF8MB4')
+engine = create_engine('mysql+pymysql://root:joywok2048@localhost:3306/websites?charset=UTF8MB4')
 Base = declarative_base()
 
 
@@ -16,7 +16,7 @@ class User(Base):
 
     __tablename__ = 'users'
 
-    id = Column(Integer, primary_key=True)
+    uuid = Column(String(32), primary_key=True)
     username = Column(String(64), nullable=False, index=True)
     password = Column(String(64), nullable=False)
     email = Column(String(64), nullable=False, index=True)
@@ -36,7 +36,7 @@ class UserInfo(Base):
     qq = Column(String(11))
     phone = Column(String(11))
     link = Column(String(64))
-    user_id = Column(Integer, ForeignKey('users.id'))
+    user_id = Column(String(32), ForeignKey('users.uuid'))
 
 
 class Article(Base):
@@ -46,7 +46,7 @@ class Article(Base):
     id = Column(Integer, primary_key=True)
     title = Column(String(255), nullable=False, index=True)
     content = Column(Text)
-    user_id = Column(Integer, ForeignKey('users.id'))
+    user_id = Column(String(32), ForeignKey('users.uuid'))
     cate_id = Column(Integer, ForeignKey('categories.id'))
     tags = relationship('Tag', secondary='article_tag', backref='articles')
 
@@ -92,6 +92,7 @@ if __name__ == '__main__':
     session = Session()
 
     faker_users = [User(
+        uuid=str(uuid.uuid4()).replace('-', ''),
         username=faker.name(),
         password=faker.word(),
         email=faker.email(),
@@ -114,5 +115,8 @@ if __name__ == '__main__':
         for tag in random.sample(faker_tags, random.randint(2, 5)):
             article.tags.append(tag)
         session.add(article)
-
+    cat = random.choice(faker_categories)
+    print(cat.id)
     session.commit()
+    cat = random.choice(faker_categories)
+    print(cat.id)

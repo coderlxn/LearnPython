@@ -36,6 +36,11 @@ def make_public_task(task):
     return new_task
 
 
+@app.route('/test/completor', methods=['GET'])
+def test_completor():
+    return jsonify({'hello': 'completor'})
+
+
 @app.route("/todo/api/v1.0/tasks", methods=["GET"])
 def get_tasks():
     return jsonify({"tasks": list(map(make_public_task, tasks))})
